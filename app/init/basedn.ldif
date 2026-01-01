@@ -1,0 +1,21 @@
+dn: ou=users,baseDN
+objectClass: organizationalUnit
+ou: users
+
+dn: ou=people,ou=users,baseDN
+objectClass: organizationalUnit
+ou: people
+
+dn: ou=Service Accounts,ou=users,baseDN
+objectClass: organizationalUnit
+ou: Service Accounts
+
+dn: ou=groups,baseDN
+objectClass: organizationalUnit
+ou: groups
+
+dn: ou=policies,baseDN
+objectClass: organizationalUnit
+objectClass: top
+ou: policies
+description: Password policy config files

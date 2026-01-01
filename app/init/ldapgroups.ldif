@@ -1,0 +1,5 @@
+dn: cn=App_LDAP,ou=groups,baseDN
+objectClass: groupOfNames
+objectClass: top
+cn: App_LDAP
+member: uid=username,ou=people,ou=users,baseDN

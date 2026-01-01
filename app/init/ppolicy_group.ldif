@@ -1,0 +1,5 @@
+dn: ou=policies,baseDN
+objectClass: organizationalUnit
+objectClass: top
+ou: policies
+description: Password policy config files

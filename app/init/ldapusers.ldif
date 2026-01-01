@@ -1,0 +1,12 @@
+dn: uid=username,ou=people,ou=users,baseDN
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+cn: fullName
+givenName: firstName
+sn: lastName
+userPassword: docker
+loginShell: /bin/bash
+uidNumber: 2000
+gidNumber: 2000
+homeDirectory: /home/username

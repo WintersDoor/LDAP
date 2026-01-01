@@ -1,0 +1,24 @@
+networks:
+    openldap-network:
+        name: openldap
+        external: true
+
+services:
+    openldap:
+        container_name: openldap-container
+        user: root
+        platform: linux/amd64
+        build:
+            context: .
+            dockerfile: Dockerfile
+        ports:
+            # - 22:22
+            - 389:389
+            - 636:636
+        restart: always
+        env_file:
+            - ./conf/local/local.env # For local testing
+        # The entrypoint doesn't need to be overridden so just leaving this here in case you want to mess with it.
+        # entrypoint: ["", ""]
+        networks:
+            - openldap-network
